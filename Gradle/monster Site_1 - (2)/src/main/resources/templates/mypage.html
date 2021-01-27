@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="../css/mypage.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Story Flow</title>
+</head>
+
+<body>
+
+  <div class="logo">Story Flow</div>
+  <div class="menu">
+    <a href="/main.html">홈</a> |
+    <a href="/sold.html">저작권매입</a> |
+    <a href="/fiction.html">소설</a> |
+    <a href="/mypage.html">내정보</a> |
+    <a href="/logout">로그아웃</a>
+    <!-- 가입 완료 -->
+    <hr class="line"> <!-- 여기까지 헤드 라인 -->
+  </div>
+  <div class="copyright"><span th:text="${session['email']}"></span>저작권 현황
+    <hr>
+    <div class="buy">구입한 저작권 : 청춘예찬
+    </div>
+  </div>
+
+  <div class="pointbox">
+    <div class="point"> 내 포인트
+      <hr>
+    </div>
+    <div class="won">현재 : db 원</div>
+
+    <a href="/recharge.html" class="recharge">포인트 충전</a>
+  </div>
+  <footer>
+    <div class="devl">developers: pavv150, nywogud, qusgotjd123</div>
+
+  </footer>
+</body>
+
+</html>

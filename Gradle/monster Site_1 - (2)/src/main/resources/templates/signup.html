@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/signup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+  <script src="../js/signup.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Story Flow</title>
+</head>
+
+<body>
+<div class="logo">Story Flow</div>
+<div class="menu">
+  <a href="/main.html">홈</a> |
+  <a href="/sold.html">저작권매입</a> |
+  <a href="/fiction.html">소설</a> |
+
+</div>
+<hr class="line"> <!-- 여기까지 헤드 라인 -->
+
+<div class="frame">
+  <form action="/register" method="post" class="signupForm" name="signupForm">
+    <!-- 액션에 서버 url-->
+    <h2>회원가입</h2>
+    <div class="idForm">
+      <input type="name" class="email" placeholder="name" name="names">
+    </div>
+    <div class="idForm">
+      <input type="email" class="email" placeholder="Email" name="email">
+    </div>
+    <div class="passForm">
+      <input type="password" class="pw" placeholder="PW" name="password">
+    </div>
+    <button type="button" class="btn" onclick="signup()" value="signup">
+      회원가입
+    </button>
+
+    <div class="bottomText">
+
+    </div>
+  </form>
+</div>
+<footer>
+  <div class="devl">developers: pavv150, nywogud, qusgotjd123</div>
+
+</footer>
+
+</body>
+
+</html>

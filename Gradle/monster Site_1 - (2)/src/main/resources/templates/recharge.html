@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="../css/recharge.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+  <script src="../js/recharge.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Story Flow</title>
+</head>
+
+<body>
+
+  <div class="logo">Story Flow</div>
+  <div class="menu">
+    <a href="/main.html">홈</a> |
+    <a href="/sold.html">저작권매입</a> |
+    <a href="/fiction.html">소설</a> |
+    <a href="/mypage.html">내정보</a> |
+    <a href="/main.html">로그아웃</a>
+    <hr class="line"> <!-- 여기까지 헤드 라인 -->
+  </div>
+
+  <div class="pointbox">
+    <h1 class="recharge">포인트 충전</h1>
+    <hr class="pointline">
+    <span class="box">
+
+      <form action="/데이터 url" method="POST">
+        <!-- 액션에 서버 url-->
+        <h2 class="cash">현재 잔액 : 0 원</h2>
+        <h3 class="inputbox">금액을 입력해주세요 : <input type="money" id="inmoney" /></h3>
+        <h2 class="cash">충전후 잔액 : 0 원</h2>
+        <input class="checkbutton" type="submit" value="포인트 충전" onclick="recharge()">
+      </form>
+
+    </span>
+  </div>
+  <footer>
+    <div class="devl">developers: pavv150, nywogud, qusgotjd123</div>
+
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+body{
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.logo{
+  font-size: 50px;
+  padding-top: 40px;
+  padding-left: 250px;
+}
+
+.menu{
+  font-size: 20px;
+  text-align: right;
+  margin-right: 300px;
+  display: block;
+}
+.line{
+  margin-left: 240px;
+  opacity: 0.3;
+}
+.board{
+  margin-left: 250px;
+}
+form {
+  /* Just to center the form on the page */
+  margin: 0 auto;
+  width: 69%;
+  height: 700px;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+.title{
+  margin-top: 30px;
+}
+#name{
+  width: 500px;
+}
+#title{
+  margin-left: 15px;
+  width: 600px;
+}
+#msg{
+  width: 1000px;
+  height: 500px;
+}
+.save{
+  float: right;
+  font-family: inherit;
+  font-size: medium;
+  background: linear-gradient(125deg,#dbdfdf,#a3a2a8,#4d7272);
+  transform: translateX(-50%);
+  background-size: 200%;
+  border: solid 1px black;
+  border-radius: 5px;
+
+}
+.neyong{
+  display: block;
+}
+button{
+  width: 100px;
+}
+input{
+  border-radius: 5px;
+  border: solid 2px #99a5a5;
+}
+textarea{
+  border-radius: 5px;
+  border: solid 2px #99a5a5;
+  font-size: large;
+}
+footer{
+  text-align: center;
+  position: absolute;
+  background-color: #dfdfdf;
+  bottom: 0;
+  left: 0px;
+  width: 100%;
+  height: 60px;
+  
+}
+.devl{
+  padding-top: 20px;
+}

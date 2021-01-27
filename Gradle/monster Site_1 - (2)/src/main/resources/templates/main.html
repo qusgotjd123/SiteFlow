@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="../css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Story Flow</title>
+</head>
+
+<body>
+
+  <div class="logo">Story Flow</div>
+  <div class="menu">
+    <a href="/main.html">홈</a> |
+    <a href="/sold.html">저작권매입</a> |
+    <a href="/fiction.html">소설</a> |
+     <span th:if="${session['email']} != null" th:utext="${session['mypagebutton']}"></span>
+    <span th:unless="${!#strings.isEmpty(session['email'])}" th:utext="${session['loginbutton']}"></span> 
+    
+    <span th:if="${!#strings.isEmpty(session['email'])}" th:utext="${session['logoutbutton']}"></span>  
+    <hr class="line"> <!-- 여기까지 헤드 라인 -->
+  </div>
+  <div class="slide">
+    <ul>
+      <li><img style="width: 1000px;" src="../img/slider1.jpg"></li>
+      <li><img style="width: 1000px;" src="../img/slider2.jpg"></li>
+    </ul>
+  </div>
+
+  <footer>
+    <div class="devl">developers: pavv150, nywogud, qusgotjd123</div>
+
+  </footer>
+</body>
+
+</html>
